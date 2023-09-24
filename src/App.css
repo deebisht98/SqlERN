@@ -1,0 +1,105 @@
+.main_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100vw;
+  height: 100vh;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 50px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  background-color: rgb(45, 45, 45);
+  padding: 20px;
+  margin-bottom: 100px;
+}
+.branding {
+  color: white;
+  cursor: pointer;
+}
+.routes {
+  display: flex;
+  margin-left: auto;
+  gap: 15px;
+  color: white;
+  cursor: pointer;
+}
+.shelf {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 90%;
+  padding: 20px;
+}
+.book {
+  height: 250px;
+  width: 200px;
+  border: 1px double rgb(45, 45, 45);
+}
+.book img {
+  transition: all 0.3s;
+}
+.book img:hover {
+  transform: scale(1.03);
+}
+.book p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.image {
+  height: 250px;
+  width: 200px;
+}
+.my-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.my-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.required::before {
+  content: "*";
+  color: red;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.my-form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.my-form input[type="submit"],
+.my-form button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+button {
+  width: 100%;
+  margin-top: 10px;
+}
+.my-form input[type="submit"]:hover,
+.my-form button:hover {
+  background-color: #489ffd;
+}
